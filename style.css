@@ -1,0 +1,252 @@
+html,body {
+    width:100vw;
+    height: 100vh;
+    margin: 0;
+    font-family: Dodge !important;
+}
+#maxlogo{
+    position:absolute;
+    top:25%;
+    left:50%;
+    transform:translate(-50%,-50%);
+
+}
+#maintext{
+    position:absolute;
+    top:50%;
+    left:50%;
+    color:white;
+    transform:translate(-50%,-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+}
+/*Main Page Button*/
+.button1 {
+  display: inline-block;
+  position: relative;
+  opacity: 0.999;
+  margin: .3em;
+  padding: .5em 1.5em;
+  border-radius: 2px;
+  transition: all 0.9s;
+  cursor: pointer;
+  font-size: 2rem;
+  top:600px;
+  left:810px;
+
+}
+
+.button1.btn-border:before,
+.button1.btn-border:after {
+  content: '';
+  border-style: solid;
+  position: absolute;
+  z-index: 5;
+  border-radius: 2px;
+  box-sizing: content-box;
+  transition: all 0.3s;
+}
+
+.button1.btn-border:hover:after {
+  height: calc(100% + (4px * 2));
+  border-color: #000000;
+}
+
+.button1.btn-border:before {
+  width: 0;
+  height: 100%;
+  border-width: 4px 0 4px 0;
+  top: -4px;
+  left: -4px;
+  transition-delay: 0.05s;
+}
+
+.button1.btn-border:hover:before {
+  width: calc(100% + (4px * 2));
+  border-color: #000000;
+}
+
+.button1.btn-border:hover {
+  color: #1b1b1b;
+}
+
+.button1.btn-border:after {
+  width: 100%;
+  height: 0;
+  border-width: 0 4px 0 4px;
+  top: -4px;
+  left: -4px;
+}
+
+.button1.btn-border {
+  background-color: rgba(252, 250, 250, 0.541);
+  border: 4px solid rgba(0,0,0,.2);
+  color: rgba(0, 0, 0, 0.541);
+  font-weight: 400;
+}
+
+
+/*video background*/
+#videoBG {
+    position:fixed;
+    z-index: -1;
+}
+@media (min-aspect-ratio: 16/9) {
+    #videoBG {
+        width:100%;
+        height: auto;
+    }
+}
+@media (max-aspect-ratio: 16/9) {
+    #videoBG { 
+        width:auto;
+        height: 100%;
+    }
+}
+@media (max-width: 767px) {
+    #videoBG {
+        display: none;
+    }
+    body {
+        background: url('images/staticvideo.jpg');
+        background-size: cover;
+    }
+}
+/* This is the nav bar */
+/* Add a black background color to the top navigation */
+.topnav {
+  background-color: rgb(27, 27, 27);
+  overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 25px;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: rgb(71, 18, 18);
+  color: white;
+}
+
+/* Add an active class to highlight the current page */
+.topnav a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+/* Hide the link that should open and close the topnav on small screens */
+.topnav .icon {
+  display: none;
+}
+
+    /*navbar responsive*/
+    /* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+  
+  /*topnav2*/
+  /* Style the links inside the navigation bar */
+  /* Add a black background color to the top navigation */
+.topnav2 {
+  background-color: rgb(27, 27, 27);
+  overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.topnav2 a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 25px;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+/* Change the color of links on hover */
+.topnav2 a:hover {
+  background-color: rgb(71, 18, 18);
+  color: white;
+}
+
+/* Add an active class to highlight the current page */
+.topnav2 a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+/* Hide the link that should open and close the topnav on small screens */
+.topnav2 .icon {
+  display: none;
+}
+  /*Topnav3*/
+  /* Style the links inside the navigation bar */
+  /* Add a black background color to the top navigation */
+.topnav3 {
+  background-color: rgb(27, 27, 27);
+  overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.topnav3 a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 25px;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+/* Change the color of links on hover */
+.topnav3 a:hover {
+  background-color: rgb(71, 18, 18);
+  color: white;
+}
+
+/* Add an active class to highlight the current page */
+.topnav3 a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+/* Hide the link that should open and close the topnav on small screens */
+.topnav3 .icon {
+  display: none;
+}
+/*my projects text on the projects page*/
+#portfoliodescript{
+  position:absolute;
+  top:20%;
+  left:50%;
+  color:white;
+  transform:translate(-50%,-50%);
+  background-color: rgba(0, 0, 0, 0.8);
+}
