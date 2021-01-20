@@ -14,13 +14,21 @@
 <div class="header">
   <div class="container">
     <h2> Web Developer | Java Developer | Web Designer </h2>
-    <h1>Max Ketchum </h1>
+    <h1 id="redname"><span id="rednametext">M</span>a<span id="rednametext">x</span> K<span id="rednametext">e</span>t<span id="rednametext">c</span>h<span id="rednametext">u</span>m </h1>
     <p>Your Next Web Developer. 👩‍💻</p>
     <a class="btn" href="#">My Projects💻</a>
     <a class="btn" type="submit" onclick="window.open('resume.pdf')" href="#">My Resume💼</a>
     <a class="btn" href="#aboutme">About Me👩🏻</a>
   </div>
 </div>
+<!--
+<script>
+function makeRed(){
+  document.getElementById("redname").style.color = "red";
+}
+makeRed()
+</script>
+-->
 
 <div class="main">
   <a id="aboutme"></a>
@@ -28,9 +36,9 @@
     <img src="images/MaxProfile.jpg" height="300" width="300" style="border-radius:65%;">
     <h2>Who Am I?</h2>
     <p>My name is Max (Maxine) Ketchum and I am a web developer based in New Jersey. 🗽</p>
-    <p>My passion is Web Development and many other forms of Programming. I studied Computer Science and Information Technology at Ocean County College, where I originally discovered my interest with programming. After attending college i've recieved my Associates in Computer Science / Information Technology.</p>
-    <p>Since attending college, i've devoted thousands of hours of my own time to studying, programming, and creating applications and websites for myself and small businesses.</p>
-    <p>I'm experienced with several different programming languages, and would love to work with you today to create your vision into reaity by making it into an application or website!</p>
+    <p>My passion is Web Development and many other forms of Programming. I studied Computer Science and Information Technology at Ocean County College, where I originally discovered my interest with programming. I'm currently studying for my Associates in Computer Science / Information Technology.</p>
+    <p>Since attending college, i've devoted thousands of hours of my own time to studying, programming, and creating applications and websites for myself and small businesses through freelancing.</p>
+    <p>I'm experienced with several different programming languages, and would love to work with you today to create your vision real by making it into an application or website!</p>
   </div>
 </div>
 
@@ -43,26 +51,89 @@
 <div class="row">
   <div class="container">
     <div class="column">
-      <img src="images/html5.png" alt="HTML5" style="width:150px">
+      <img class="html" src="images/html5.png" alt="HTML5" style="width:150px">
     </div>
     <div class="column">
-      <img src="images/css3.png" alt="CSS3" style="width:150px">
+      <img class="css" src="images/css3.png" alt="CSS3" style="width:150px">
     </div>
     <div class="column">
-      <img src="images/javascript.png" alt="Javascript" style="width:150px">
+      <img class="javascript" src="images/javascript.png" alt="Javascript" style="width:150px">
     </div>  
     <div class="column">
-      <img src="images/java.png" alt="Java" style="width:150px">
-    </div>  
-    <div class="column">
-      <img src="images/react.jpg" alt="React" style="width:150px">
-    </div>  
-    <div class="column">
-      <img src="images/Git.png" alt="Git" style="width:150px">
-    </div>  
-    <div class="column">
-      <img src="images/PHP.png" alt="PHP" style="width:150px;height:120px;">
-    </div>  
+      <img class="java" src="images/java.png" alt="Java" style="width:150px">
+    </div> 
+  </div>
+</div>
+
+<div class="main2">
+  <div class="container">
+    <h2>Here are some of my projects! </h2>
+    <div id="textelement">
+    <h5>(Click on laptop for GitHub link)</h5>
+    </div>
+  </div>
+</div>
+
+<script type="text/javascript">
+//Changes the text every few seconds
+var d = new Date();
+    
+var date = d.getUTCDate();
+var month = d.getUTCMonth() + 1; // Since getUTCMonth() returns month from 0-11 not 1-12
+var year = d.getUTCFullYear();
+    
+var dateStr = month + "/" + date + "/" + year;
+
+var myVar = setInterval(changeText2, 4000);
+  function changeText1() {
+  document.getElementById("textelement").innerHTML = "Click on the laptop(s) for GitHub link!"}
+  changeText1()
+  var myVar = setInterval(changeText1, 8000);
+  function changeText2() {
+  document.getElementById("textelement").innerHTML = "All of my best projects from 1/10/2021 to " + dateStr;
+  }
+</script>
+
+<div class="row">
+  <div class="container2">
+    <h4 id="site1">ScottGames 2.0 Fansite - Created 1/10/21</h4>
+    <h4 id="site2">Guinea Pig Rescue - Created 1/10/21</h4>
+    <h4 id="site3">ScottGames 2.0 Fansite - Created 1/10/21</h4>
+
+    <div class overlaycontainer>
+    <div class="column2">
+      <img id="mysite1" src="images/project1.png" alt="Scottgames Project" style="width:350px">
+       <div>
+         <div class="overlay">
+
+         </div>
+       </div>
+    </div>
+  </div>
+    <div class="column2">
+      <img id="mysite2" src="images/project2.png" alt="Guinea Pig Rescue Project" style="width:350px">
+    </div>
+    <div class="column2">
+      <img id="mysite3" src="images/project1.png" alt="Scottgames Project" style="width:350px">
+    </div>
+  </div>
+</div>
+<div class="row">
+  <div class="container2">
+    <h4 id="site4">ScottGames 2.0 Fansite - Created 1/10/21</h4>
+    <h4 id="site5">ScottGames 2.0 Fansite - Created 1/10/21</h4>
+    <h4 id="site6">ScottGames 2.0 Fansite - Created 1/10/21</h4>
+
+    
+    <div class="column2">
+      <img id="mysite4" src="images/project1.png" alt="Scottgames Project" style="width:350px">
+    </div>
+    <div class="column2">
+      <img id="mysite5" src="images/project1.png" alt="Scottgames Project" style="width:350px">
+    </div>
+    <div class="column2">
+      <img id="mysite6" src="images/project1.png" alt="Scottgames Project" style="width:350px">
+    </div>
   </div>
 </div>
 
